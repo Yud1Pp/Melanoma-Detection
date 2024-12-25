@@ -259,7 +259,7 @@ elif selected_menu == "Prediction":
         else:
             st.write(
                 "Hasil prediksi menunjukkan bahwa melanoma bersifat jinak. "
-                "Disarankan untuk tetap memantau perkembangan kondisi dan berkonsultasi dengan dokter kulit secara berkala untuk memastikan tidak ada perubahan yang mencurigakan."
+                "Disarankan untuk tetap memantau perkembangan kondisi dan berkonsultasi dengan dokter kulit secara berkala untuk memastikan tidak ada perubahan yang mencurigakan. "
                 "Tetap pantau kondisi kulit Anda secara rutin. "
                 "Berikut beberapa langkah yang bisa Anda lakukan:\n"
                 "- Hindari paparan sinar matahari berlebihan, terutama di siang hari.\n"
