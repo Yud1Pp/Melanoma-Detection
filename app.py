@@ -244,8 +244,29 @@ elif selected_menu == "Prediction":
             st.image(display_histogram(hist), width=520)
         
         st.header('')
-        st.write('Berdasarkan hasil yang diprediksi oleh model melanoma clasification, diprediksi bahwa kanker malenoma:')
-        st.header(f'{hasil}')
+        st.write(
+            "Berdasarkan hasil analisis menggunakan model klasifikasi melanoma, kami telah memprediksi sifat dari melanoma yang terdapat pada gambar yang Anda unggah. "
+            "Hasil prediksi ini memberikan informasi penting tentang apakah melanoma tersebut bersifat jinak atau ganas."
+        )
+        st.header(f'Hasil Prediksi: Melanoma {hasil}')
+        if hasil == 'Ganas':
+            st.write(
+                "Hasil prediksi menunjukkan bahwa melanoma bersifat ganas. "
+                "Sangat disarankan untuk segera periksakan diri Anda ke dokter kulit atau ahli dermatologi untuk pemeriksaan lebih lanjut dan mendapatkan perawatan yang sesuai. "
+                "Hindari menggaruk atau mencoba menghilangkan area tersebut sendiri. "
+                "Pastikan juga kulit terlindungi dari sinar matahari langsung dengan menggunakan pakaian pelindung atau sunscreen."
+            )
+        else:
+            st.write(
+                "Hasil prediksi menunjukkan bahwa melanoma bersifat jinak. "
+                "Disarankan untuk tetap memantau perkembangan kondisi dan berkonsultasi dengan dokter kulit secara berkala untuk memastikan tidak ada perubahan yang mencurigakan."
+                "Tetap pantau kondisi kulit Anda secara rutin. "
+                "Berikut beberapa langkah yang bisa Anda lakukan:\n"
+                "- Hindari paparan sinar matahari berlebihan, terutama di siang hari.\n"
+                "- Gunakan sunscreen dengan SPF 30 atau lebih setiap hari.\n"
+                "- Amati perubahan ukuran, warna, atau bentuk pada area kulit yang mencurigakan.\n"
+                "- Jika ada perubahan yang tidak biasa, segera konsultasikan ke dokter kulit."
+            )
 
 
 elif selected_menu == "About App":
